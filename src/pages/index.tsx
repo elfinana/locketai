@@ -6,21 +6,19 @@ export default function Home() {
   return (
     <main className="w-full flex justify-center bg-white">
       <div className="w-full max-w-md  bg-[#F3F2EF] relative">
-        <section className="w-full">
+        <section className="w-full relative">
           <Image
             src="/assets/image.svg"
             alt="상단 이미지"
             width={448}
             height={1403}
-            className="w-full h-full"
+            className="w-full h-auto"
           />
           <div
             className="absolute"
             style={{
-              top: "35%",
-
+              top: "47.5%",
               left: "20%",
-
               width: "29.9%",
               height: "5.1%",
             }}
@@ -38,7 +36,7 @@ export default function Home() {
           <div
             className="absolute"
             style={{
-              top: "54.2%",
+              top: "73.3%",
               left: "18.2%",
               width: "40%",
               height: "3.4%",
@@ -59,14 +57,14 @@ export default function Home() {
           <section className="relative  w-full  bg-[#F5F3EC] border-[3px] border-[#1B2F49]">
             <Image
               src="/assets/left.svg"
-              alt="상단 이미지"
+              alt="왼쪽 이미지"
               width={56}
               height={38}
               className="absolute left-[9px] top-[45px]"
             />
             <Image
               src="/assets/right.svg"
-              alt="상단 이미지"
+              alt="오른쪽 이미지"
               width={56}
               height={38}
               className="absolute right-2 top-[26px] "
