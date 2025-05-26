@@ -1,3 +1,5 @@
+import SajuHeader from "@/components/SajuHeader";
+import SajuTable from "@/components/SajuTable";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
           <div
             className="absolute"
             style={{
-              top: "47%",
+              top: "35%",
 
               left: "20%",
 
@@ -36,7 +38,7 @@ export default function Home() {
           <div
             className="absolute"
             style={{
-              top: "73.2%",
+              top: "54.2%",
               left: "18.2%",
               width: "40%",
               height: "3.4%",
@@ -52,9 +54,39 @@ export default function Home() {
             </p>
           </div>
         </section>
+        {/* 아래 사주팔자표 */}
+        <div className="px-3">
+          <section className="relative  w-full  bg-[#F5F3EC] border-[3px] border-[#1B2F49]">
+            <Image
+              src="/assets/left.svg"
+              alt="상단 이미지"
+              width={56}
+              height={38}
+              className="absolute left-[9px] top-[45px]"
+            />
+            <Image
+              src="/assets/right.svg"
+              alt="상단 이미지"
+              width={56}
+              height={38}
+              className="absolute right-2 top-[26px] "
+            />
+            <div className="absolute top-2 left-0 right-0 h-px bg-[#1B2F49] z-10" />
+            <div className="absolute bottom-2 left-0 right-0 h-px bg-[#1B2F49] z-10" />
+            <div className="flex px-2">
+              <div className="w-px bg-[#1B2F49]" />
+
+              <div className="flex-1">
+                <SajuHeader />
+                <SajuTable />
+              </div>
+
+              {/* 오른쪽 세로줄 */}
+              <div className="w-px bg-[#1B2F49] " />
+            </div>
+          </section>
+        </div>
       </div>
     </main>
   );
 }
-
-// bg-[#F3F2EF]"
